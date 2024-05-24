@@ -1,7 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 .meet {
   width: 100%;
   height: 100vh;
-  /* position: absolute; */
 }
 
 .content {
@@ -406,4 +412,67 @@
   font-weight: 500;
   border-radius: 1.5rem;
   color: whitesmoke;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    margin-top: -20rem;
+    margin-left: 10rem;
+  }
+
+  .box {
+    width: 50%;
+    margin: -3rem auto;
+  }
+
+  .box-engage-img {
+    width: 20rem;
+  }
+
+  .section-team {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .section-team-image {
+    width: 70%;
+  }
+
+  .client-details {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .content {
+    margin-top: -15rem;
+    margin-left: 5rem;
+  }
+
+  .box {
+    width: 80%;
+    margin: -3rem auto;
+  }
+
+  .box-engage-img {
+    width: 15rem;
+  }
+
+  .section-team {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .section-team-image {
+    width: 90%;
+  }
+
+  .client-details {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

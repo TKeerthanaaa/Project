@@ -69,14 +69,35 @@
   gap: 15rem;
 }
 
-.end-img{
+.end-img {
   width: 5rem;
 }
 
-.end-list{
+.end-list {
   display: flex;
   flex-direction: row;
   gap: 3.5rem;
   align-items: center;
+}
 
+@media (max-width: 768px) {
+  .footer-item {
+    margin: 3rem auto;
+  }
+
+  .footer-end {
+    width: 90%;
+    margin: 3.5rem auto;
+  }
+
+  .end {
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 0;
+  }
+
+  .end-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
